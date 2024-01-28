@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    android:background="#FFE4C4"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".ProfileActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="176dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="104dp"
+        android:onClick="signout"
+        android:text="LOG OUT"
+        app:backgroundTint="@color/colorButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewButton" />
+
+    <Button
+        android:id="@+id/cafeButton"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="cafeButton"
+        android:text="CAFE RECOMMENDATIONS"
+        app:backgroundTint="@color/colorButton"
+        app:layout_constraintBottom_toTopOf="@+id/aboutUsButton"
+        app:layout_constraintEnd_toEndOf="@+id/aboutUsButton"
+        app:layout_constraintStart_toStartOf="@+id/aboutUsButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/aboutUsButton"
+        android:layout_width="232dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="aboutUs"
+        android:text="ABOUT US"
+        app:backgroundTint="@color/colorButton"
+        app:layout_constraintBottom_toTopOf="@+id/reviewButton"
+        app:layout_constraintEnd_toEndOf="@+id/reviewButton"
+        app:layout_constraintStart_toStartOf="@+id/reviewButton"
+        app:layout_constraintTop_toBottomOf="@+id/cafeButton" />
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="REVIEWS"
+        app:backgroundTint="@color/colorButton"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="160dp"
+        android:layout_height="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="300dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="195dp"
+        android:layout_marginBottom="119dp"
+        android:text="WELCOME!"
+        app:layout_constraintBottom_toTopOf="@+id/cafeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
